@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+ 	<title>Agility in Ukraine - 404 page</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="icon" type="image/ico" href="../favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Paprika+Noto+Sans:400,400italic,700,700italic&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <script src="../js/jquery-2.2.2.min.js"></script> 
+  <script type="text/javascript"></script> 
+</head>
+
+<body>
+<!-- Header -->
+<header> 
+  <div class="main_head">
+  	<div id="container_logo" class="logo_move">
+      <a href="index.html"><img src="../images/agiLogo.png" alt="logo"></a>
+    </div>
+   	<div class="container-nav">
+  		<!-- panel with buttons -->
+        <div class="panel">
+          <a href="#login_form" id="login_pop">Вход</a>
+          <a href="#join_form" id="join_pop">Регистрация</a>
+          <a id="fb" href="https://www.facebook.com/groups/364276606945011/"></a>
+        </div>
+  		<!-- menu -->   
+        <nav id="menu" class="default">
+          <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="./news.html">Новости</a></li>
+              <li class="current"><a href="rules.html">Правила</a>
+                <ul>
+                  <li><a href="rules.html#uku">КСУ</a></li>
+                  <li><a href="rules.html#fci">FCI</a></li>
+                  <li><a href="rules.html#ifcs">IFCS</a></li>
+                </ul>
+              </li>
+              <li><a href="./404.html">Соревнования</a>
+                <ul>
+                  <li><a href="#">Результаты 2015</a></li>
+                  <li><a href="#">Результаты 2014</a></li>
+                  <li><a href="#">Результаты 2013</a></li>
+                  <li><a href="#">Архив</a></li>
+                </ul>
+              </li>
+              <li><a href="./rating.html">Рейтинг</a>
+                <ul>
+                  <li><a href="./rating.html#rating_policy">Регламент</a></li>
+                  <li><a href="#">Рейтинг 2014</a></li>
+                  <li><a href="#">Рейтинг 2013</a></li>
+                  <li><a href="#">Архив рейтинга</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+ 	  </div> 
+  </div> 
+</header> 
+<!-- popup form #1: Log In -->
+<a href="#x" class="overlay" id="login_form"></a>
+  <div class="popup">
+    <h2>Добро пожаловать!</h2>
+    <p>Пожалуйста, введите Ваш логин и пароль</p>
+  <div>
+    <label for="login">Логин</label>
+    <input type="text" id="login" value="" />
+  </div>
+  <div>
+    <label for="password">Пароль</label>
+    <input type="password" id="password" value="" />
+  </div>
+    <input type="button" value="Log In" />
+    <a class="close" href="#close"></a>
+  </div>
+
+<!-- popup form #2: Register -->
+<a href="#x" class="overlay" id="join_form"></a>
+  <div class="popup">
+    <h2>Регистрация</h2>
+    <p>Введите Ваши данные, пожалуйста</p>
+    <div>
+      <label for="name">Имя *</label>
+      <input type="text" id="name" value="" required/>
+    </div>
+    <div>
+      <label for="login">Логин *</label>
+      <input type="text" id="login" value="" required/>
+    </div>
+    <div>
+      <label for="pass">Пароль *</label>
+      <input type="password" id="pass" value="" required/>
+    </div>
+    <div>
+      <label for="pass_confirm">Подтверждение пароля*</label>
+      <input type="password" id="pass_comfirm" value="" required/>
+    </div>
+    <div>
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" value="" required/>
+    </div>
+    <div>
+      <label for="email_confirm">Подтверждение E-mail*</label>
+      <input type="email" id="email_confirm" value="" required />
+    </div>
+    <input type="submit" value="Зарегистрироваться" />&nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Войти</a>
+    <a class="close" href="#close"></a>
+  </div>
+
+
+<!-- Content -->
+<div class="content_block">
+  <div class="container_content"> 
+  <!--rules UKU -->
+      <div class="container_uc">
+          <img src="../images/under_construction.png" alt="under_construction"></a>
+      </div>
+  </div>
+</div>
+
+
+  
+<!--footer -->
+<footer>
+<div class="container_footer">
+    <div class="cont_foot_wrap_l">     
+      <p>Design by:<a href="mailto:v.ovs76@gmail.com"> vio</a>
+  </div>
+  <div class="cont_foot_wrap_mid">     
+      <p>Agility in Ukraine &copy; <a href="#">LES</a> <script type="text/javascript">
+  document.write(new Date().getFullYear()); </script></div>
+    <div class="cont_foot_wrap_r"> 
+      <a href="mailto:admin@agility.in.ua">Написать нам</a>
+    </div>
+</div>
+
+
+</footer>
+<div id="toTop"></div>
+</div>
+<script src="../js/js.js"></script>
+</body>
+</html>

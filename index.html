@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+ 	<title>Agility in Ukraine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" type="image/ico" href="./favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Paprika+Noto+Sans:400,400italic,700,700italic&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <script src="js/jquery-2.2.2.min.js"></script> 
+  <script type="text/javascript"></script> 
+</head>
+
+<body>
+<!-- Header -->
+<header> 
+  <div class="main_head">
+  	<div id="container_logo" class="logo_move">
+      <a href="index.html"><img src="./images/agiLogo.png" alt="logo"></a>
+    </div>
+   	<div class="container-nav">
+  		<!-- panel with buttons -->
+        <div class="panel">
+          <a href="#login_form" id="login_pop">Вход</a>
+          <a href="#join_form" id="join_pop">Регистрация</a>
+          <a id="fb" href="https://www.facebook.com/groups/364276606945011" target="_blank"></a>
+        </div>
+  		<!-- menu -->   
+        <nav id="menu" class="default">
+          <ul>
+              <li class="current"><a href="index.html">Главная</a></li>
+              <li><a href="./pages/news.html">Новости</a></li>
+              <li><a href="./pages/rules.html">Правила</a>
+                <ul>
+                  <li><a href="./pages/rules.html#uku">КСУ</a></li>
+                  <li><a href="./pages/rules.html#fci">FCI</a></li>
+                  <li><a href="./pages/rules.html#ifcs">IFCS</a></li>
+                </ul>
+              </li>
+             <li><a href="./pages/404.html">Соревнования</a>
+                <ul>
+                  <li><a href="#">Результаты 2015</a></li>
+                  <li><a href="#">Результаты 2014</a></li>
+                  <li><a href="#">Результаты 2013</a></li>
+                  <li><a href="#">Архив</a></li>
+                </ul>
+              </li>
+              <li><a href="./pages/rating.html">Рейтинг</a>
+                <ul>
+                  <li><a href="./pages/rating.html#policy">Регламент</a></li>
+                  <li><a href="./pages/rating.html#rating2014">Рейтинг 2014</a></li>
+                  <li><a href="./pages/rating.html#rating2013">Рейтинг 2013</a></li>
+                  <li><a href="./pages/rating.html#rating_archive">Архив рейтинга</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+          <!-- menu mobi --> 
+        <div class="mobile-nav">
+          <div class="menu-btn" id="menu-btn">
+             <div></div>
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+          <div class="responsive-menu">
+              <ul>
+              <li class="current"><a href="index.html">Главная</a></li>
+              <li><a href="./pages/news.html">Новости</a></li>
+              <li><a href="./pages/rules.html">Правила</a></li>
+              <li><a href="./pages/404.html">Результаты</a> </li>
+              <li><a href="./pages/rating.html">Рейтинг</a></li>
+              </ul>
+          </div>
+        </div>
+    </div> 
+  </div> 
+</header> 
+
+<!-- popup form #1: Log In -->
+<a href="#x" class="overlay" id="login_form"></a>
+  <div class="popup">
+    <h2>Добро пожаловать!</h2>
+    <p>Пожалуйста, введите Ваш логин и пароль</p>
+  <div>
+    <label for="login">Логин</label>
+    <input type="text" id="login" value="" />
+  </div>
+  <div>
+    <label for="password">Пароль</label>
+    <input type="password" id="password" value="" />
+  </div>
+    <input type="button" value="Log In" />
+    <a class="close" href="#close"></a>
+  </div>
+
+<!-- popup form #2: Register -->
+<a href="#x" class="overlay" id="join_form"></a>
+  <div class="popup">
+    <h2>Регистрация</h2>
+    <p>Введите Ваши данные, пожалуйста</p>
+    <div>
+      <label for="name">Имя *</label>
+      <input type="text" id="name" value="" required/>
+    </div>
+    <div>
+      <label for="login">Логин *</label>
+      <input type="text" id="login" value="" required/>
+    </div>
+    <div>
+      <label for="pass">Пароль *</label>
+      <input type="password" id="pass" value="" required/>
+    </div>
+    <div>
+      <label for="pass_confirm">Подтверждение пароля*</label>
+      <input type="password" id="pass_comfirm" value="" required/>
+    </div>
+    <div>
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" value="" required/>
+    </div>
+    <div>
+      <label for="email_confirm">Подтверждение E-mail*</label>
+      <input type="email" id="email_confirm" value="" required />
+    </div>
+    <input type="submit" value="Зарегистрироваться" />&nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Войти</a>
+    <a class="close" href="#close"></a>
+  </div>
+
+
+<!--Top block - slider & banner-->
+  <div class="top_block">
+    <div class="slider-container">
+        <div class="slider_wrap" id="slider">
+          <img src="./images/slide1.png">
+          <img src="./images/slide2.png">
+          <img src="./images/slide3.png">
+          <img src="./images/slide4.png">
+          <img src="./images/slide5.png">
+          <img src="./images/slide6.png">
+          <img src="./images/slide7.png">
+          <img src="./images/slide8.png">
+          <img src="./images/slide9.png">
+          <img src="./images/slide10.png">
+          <span class="next">></span>
+          <span class="prev"><</span>
+        </div>
+        <div class="banner">
+          <h2>Добро  пожаловать в мир Аджилити в Украине!</h2>
+          <p> Одни считают, что аджилити - это молодой и динамичный вид спорта, в котором собака преодолевает трассу c препятствиями по командам хендлера, а другие - что это отличный досуг и превосходный способ коммуникации с собакой, но в любом случае аджилити - это образ жизни и те неповторимые секунды забега, результат которого зависит от взаимодействия и взаимопонимания собаки и человека, как одной команды.</p>
+          <p >Как спорт, аджилити появилось в конце 70-х годов ХХ века в Великобритании и пусть у украинского аджилити не такое глубокое прошлое, но зато у него большое будущее и делают его те, кто открыт для нового опыта и знаний и не боится ими делиться с другими.</p>
+          <p>Этот сайт является независимым ресурсом, предназначенным для отображения информации, новостей, обмена опытом и просто общения всех, кому не безразличен увлекательный мир <span>АДЖИЛИТИ</span></p> 
+        </div>
+    </div>
+  </div>
+<!-- Content -->
+
+<div class="content_block">
+  <div class="container_content"> 
+  <!--news -->
+      <div class="container_news">
+          <h2>Новости</h2>
+            <div class="accordion">
+              <h3>Сборная команда Украины на Чемпионате Мира IFCS-2016</h3>
+                <div id="ac1" class="ac"> 
+                  <p>Представляем команду Украины на на Чемпионате Мира IFCS-2016:<a href="http://wacnl.com/onewebmedia/Team%20UA.pdf"> Команда Украины</a></p>
+                  <iframe width="427" height="240" src="https://www.youtube.com/embed/wj5EUKpuXz8" frameborder="0" allowfullscreen></iframe>
+                </div> 
+              <h3>Сборная команда Украины на Чемпионате Eвропы FCI-2016 среди юниоров</h3>
+                <div id="ac2" class="ac">
+                  <p>В этом году команда КСУ впервые представлена на Чемпионате Мира среди юниоров FCI!<a href="http://uku-junior.jimdo.com"><img src="./images/uku_jun16.png" alt="JEO2016"></a></p>
+                </div>
+              <h3>Чемпионат Мира FCI-2017 пройдет в Чехии!</h3>
+                <div id="ac3" class="ac"> 
+                  <p>Чемпионат Мира по аджилити FCI-2017 пройдет 5-8.10.2017 в г. Либерец, Чехия.</p>
+                  <img src="./images/wac2017.jpg" alt="wac2017">
+                </div> 
+            </div>
+      </div>
+
+
+   <!--Calendar -->        
+      <div class="container_cal">
+          <h2>Календарь мероприятий</h2>
+          <div class="calender">
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=agility.in.ukraine%40gmail.com&amp;color=%23182C57&amp;ctz=Europe%2FKiev"></iframe> 
+          </div>
+      </div>
+    </div>
+  </div>
+<!--Agility Clubs -->
+  <div class="container_clubs">
+    <div class="container_map">
+        <h2>Клубы аджилити в Украине</h2>
+          <div class="map">
+             <iframe src="https://www.google.com/maps/d/embed?mid=zk1wIeWIa3FU.kl4a3VLB-KFM"></iframe>
+          </div>
+    </div>
+    <div class="container_clubs_tbl">
+      <div class="container-s-f">
+        <div class="scroll" title="Свернуть">˄</div>
+        <div class="full" title="Развернуть">˅</div>
+      </div>
+      <div class="container-tbl">
+        <div class="clubs">
+          <table>
+              <tr>
+                <th>Клуб</th>
+                <th>Контактное лицо</th>
+                <th>Адрес</th>
+                <th>Телефон</th>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Белгород-Днестровский</td>
+              </tr>
+              <tr>
+                <td><a href="http://frends.com.ua/" target="_blank">Клуб Друг</a></td>
+                <td>Чудин Сергей</td>
+                <td>ул. Маяковского, 42в. (8-я линия)</td>
+                <td>(067) 905-82-63</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Днепропетровск</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.facebook.com/groups/648443468590994/" target="_blank">Fast Paws Agility Club</a></td>
+                <td>Овсиенко Виктория</td>
+                <td>ул.Нижнеднепровская 1, Юбилейное, Днепропетровская обл.</td>
+                <td>(095) 399-54-96</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Киев</td>
+              </tr>
+              <tr>
+                <td><a href="http://agilityinkiev.jimdo.com" target="_blank">секция КСУ "Метеор"</a></td>
+                <td>Коновальчук Ирина</td>
+                <td>ул. Горловская 220</td>
+                <td>(066) 162-44-60</td>
+              </tr>
+              <tr>
+                <td><a href="http://agility.kiev.ua/" target="_blank">клуб Каста</a></td>
+                <td>Судакова Дарья</td>
+                <td><p>1) м.Славутич, пр-т Бажана</p>
+                <p>2) ВДНХ, 19 павильон, 2ой этаж</p></td>
+                <td>(093) 982-34-82</td>
+              </tr>
+              <tr>
+                <td><a href="https://vipagility.wordpress.com/" target="_blank">Клуб "Мистраль"</a></td>
+                <td>Косенко Диана</td>
+                <td>с. Петровское Киевской обл.</td>
+                <td>(050) 410-93-70</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.facebook.com/groups/453778671385422/" target="_blank">Спортивно-кинологический клуб "Укртранс"</a></td>
+                <td>Холод Диана</td>
+                <td>Красиловка, Броварской р-н, Киевской обл.</td>
+                <td>(093) 012-59-52</td>
+              </tr>
+              <tr>
+               <td colspan="4">Кривой Рог</td>
+              </tr>
+              <tr>
+                <td>Клуб "Собачья Академия"</td>
+                <td>Кудринская Ольга</td>
+                <td>ул. Светлогорская (р-н Первомайки)</td>
+                <td>(098) 659-02-27</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Львов</td>
+              </tr>
+              <tr>
+                <td><a href="http://docgoncharuk.ucoz.ua/" target="_blank">Кинологический центр ДОК</a></td>
+                <td>Братах Ольга</td>
+                <td>ул. Научная, 3а</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Мариуполь</td>
+              </tr>
+              <tr>
+                <td><a href="http://www.dogsport.org.ua/" target="_blank">ВФКС</a></td>
+                <td>Бинковский Константин Петрович</td>
+                <td>парк им. Гурова (пр. Металлургов)</td>
+                <td>(067) 773-60-90</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Одесса</td>
+              </tr>
+              <tr>
+                <td>Аджика</td>
+                <td>Класс Ольга</td>
+                <td>ул. Аэропортовская, 13</td>
+                <td>(067) 484-97-53</td>
+              </tr>
+              <tr>
+                <td><a href="http://www.ogosksu.od.ua/" target="_blank">Одесское ГО КСУ "Родная природа"</a></td>
+                <td>Чугуев Геннадий</td>
+                <td>435 км трассы Одесса-Киев, с. Христиновка </td>
+                <td>(067) 706-05-15</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.facebook.com/groups/469608093169709/" target="_blank">ГДК "Лайка"</a></td>
+                <td>Джура Оксана</td>
+                <td>ул. Хуторская, 101В</td>
+                <td>(095) 844-83-66</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Павлоград</td>
+              </tr>
+              <tr>
+                <td><a href="http://pavldog.at.ua/" target="_blank">Павлогардское ГО КСУ "Антарес"</a></td>
+                <td>Борисенко Лариса Анатольевна</td>
+                <td>ул. Комарова, стадион "Горняк"</td>
+                <td>(050) 941-04-76</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Севастополь</td>
+              </tr>
+              <tr>
+                <td><a href="http://komanda-azart.com/" target="_blank">Команда Азарт</a></td>
+                <td>Тарасенко Любовь</td>
+                <td>Исторический бульвар</td>
+                <td>(050) 234-74-82</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Сумы</td>
+              </tr>
+              <tr>
+                <td><a href="http://ksu-sumy.com/" target="_blank">Сумский обл. центр собаководства КСУ</a></td>
+                <td>Була Людмила</td>
+                <td>ул. Герасима Кондратьева, 160</td>
+                <td>(050) 971-95-34</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Харьков</td>
+              </tr>
+              <tr>
+                <td><a href="http://agility.org.ua/" target="_blank">КГ Авангард</a></td>
+                <td>Денисенко В.В</td>
+                <td>ул. Пушкинская, Молодежный парк</td>
+                <td>(067) 259-73-70</td>
+              </tr>
+              <tr>
+                <td><a href="http://acik.zbord.ru/" target="_blank">КЛАСС</a></td>
+                <td>Лакошко Елена</td>
+                <td>стадион Кондиционер</td>
+                <td>(066) 372-15-19</td>
+              </tr>
+              <tr>
+                <td colspan="4" align="center">Черкассы</td>
+              </tr>
+              <tr>
+                <td><a href="http://talexdog.org.ua/" target="_blank">Черкасская ОФКС</a></td>
+                <td>Толстопят Александр Владимирович</td>
+                <td> </td>
+                <td>(093) 918-05-00</td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--footer -->
+<footer>
+  <div class="container_footer">
+      <div class="cont_foot_wrap_l">     
+        <p>Design by:<a href="mailto:v.ovs76@gmail.com"> vio</a>
+      </div>
+      <div class="cont_foot_wrap_mid">     
+          <p>Agility in Ukraine &copy; <a href="#">LES</a> <script type="text/javascript">
+      document.write(new Date().getFullYear()); </script>
+      </div>
+      <div class="cont_foot_wrap_r"> 
+        <a href="mailto:admin@agility.in.ua">Написать нам</a>
+      </div>
+  </div>
+</footer>
+<div id="toTop"></div>
+
+<script src="./js/js.js"></script>
+</body>
+</html>
